@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter';
+import List from './components/List';
+import Search from './components/Search';
 
 function App() {
+  const birdList = ['ovenbird', 'red-winged blackbird', 'red-eyed vireo', 'gray vireo', 'eastern wood-pewee', 'red-breasted merganser', 'blue grosbeak', 'gray flycatcher', 'gray catbird', 'eastern kingbird', 'brown-headed cowbird', 'brown creeper', 'blue-headed vireo'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Search birds={birdList} />
+      <Counter />
+      <List />
     </div>
   );
 }
