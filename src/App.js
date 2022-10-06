@@ -1,6 +1,7 @@
 import './App.css';
 import Counter from './components/Counter';
 import List from './components/List';
+import Printer from './components/Printer';
 import Search from './components/Search';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Search birds={birdList} />
       <Counter />
       <List />
+      <Printer />
     </div>
   );
 }
